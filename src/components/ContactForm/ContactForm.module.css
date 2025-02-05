@@ -1,0 +1,31 @@
+.container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.containerLabel {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 5px;
+  display: inline-block;
+  margin: auto;
+  width: 100px;
+  background-color: gainsboro;
+}
+
+.input {
+  padding: 2px 0;
+}
+
+.error {
+  font-size: 15px;
+  color: red;
+}

@@ -1,0 +1,16 @@
+.containerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.button {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: gainsboro;
+  height: 34px;
+}
+
+.icon {
+  margin-right: 5px;
+}

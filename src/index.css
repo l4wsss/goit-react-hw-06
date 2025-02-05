@@ -1,0 +1,50 @@
+/* Скидання відступів, полів і меж */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+/* Задаємо нульове відступання для списків */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Скидання для посилань */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Скидання для таблиць */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Скидання для зображень */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Нульові відступи для форм і полів */
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Скидання меж для кнопок */
+button {
+  background: none;
+  cursor: pointer;
+}
