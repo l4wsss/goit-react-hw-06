@@ -1,11 +1,13 @@
-import PropTypes from "prop-types";
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import s from "./ContactForm.module.css";
 import * as Yup from "yup";
+import { useDispatch } from "react-redux";
+import { addContact } from "../../redux/contactsSlice";
 
-const ContactForm = ({ addNewContact }) => {
+const ContactForm = () => {
+  const dispatch = useDispatch();
   const handleSubmit = (values, actions) => {
-    addNewContact(values);
+    dispatch(addContact(values));
     actions.resetForm();
   };
 
@@ -52,10 +54,6 @@ const ContactForm = ({ addNewContact }) => {
       </Form>
     </Formik>
   );
-};
-
-ContactForm.propTypes = {
-  addNewContact: PropTypes.func.isRequired,
 };
 
 export default ContactForm;
